@@ -1,0 +1,25 @@
+footer {
+  padding: 20px;
+  background-color: #2e7d32; /* Fundo verde */
+  color: white;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00; /* Cor de hover (amarelo) */
+}

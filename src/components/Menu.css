@@ -1,0 +1,52 @@
+.menu-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: auto; /* Adicionado para alinhar o menu à direita */
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 40px;
+    right: 0; /* Adicionado para posicionar o menu à direita */
+    background-color: #2e7d32;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .menu.show {
+    display: flex;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    margin: 10px 0;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-container.open .menu-icon {
+    color: white;
+  }
+  

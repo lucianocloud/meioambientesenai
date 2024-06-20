@@ -1,0 +1,128 @@
+.contact-section,
+.home-section,
+.about-section,
+.services-section {
+  background-color: white; /* Fundo branco */
+  color: #333; /* Cor do texto */
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.additional-content {
+  text-align: left;
+  max-width: 800px;
+  margin: 40px auto;
+  padding-bottom: 100px; /* Espaço adicional para o rodapé */
+}
+
+h1, h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.flex-image {
+  width: 100%;
+  max-width: 250px;  /* Aumentar o tamanho máximo das imagens */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.flex-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2e7d32;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #1b5e20;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #ffcc00;
+  color: #2e7d32;
+  transform: scale(1.05);
+}
+
+footer {
+  padding: 20px;
+  background-color: #2e7d32; /* Fundo verde */
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00; /* Cor de hover (amarelo) */
+}
