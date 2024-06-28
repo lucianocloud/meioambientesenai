@@ -1,3 +1,7 @@
+.carousel {
+  margin-bottom: 20px;
+}
+
 .contact-section,
 .home-section,
 .about-section,
@@ -76,7 +80,8 @@ ul li {
   color: #2e7d32;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc; /* Borda cinza clara */

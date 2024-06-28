@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-  height: 40px;
+  height: 60px; /* Aumentar o tamanho do logo */
 }
 
 main {
@@ -36,6 +36,20 @@ main {
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.additional-content {
+  text-align: left;
+  max-width: 800px;
+  margin: 40px auto;
+  padding-bottom: 100px; /* Espaço adicional para o rodapé */
+}
+
+.carousel-image {
+  height: 300px; /* Diminuir a altura das imagens do carrossel */
+  width: 80%; /* Diminuir a largura das imagens do carrossel */
+  margin: 0 auto; /* Centralizar as imagens do carrossel */
+  object-fit: cover;
 }
 
 h1, h2 {
@@ -97,7 +111,8 @@ ul li {
   color: #2e7d32;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc; /* Borda cinza clara */

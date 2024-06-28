@@ -5,12 +5,24 @@ import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
 import image4 from '../assets/image4.jpg';
 import './MainContent.css';
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MainContent = () => {
   return (
     <main>
       <section id="home" className="section home-section">
-        <img src={yourImage} alt="Main Content" className="main-image" />
+        <Carousel className="carousel" interval={5000}> {/* Muda as imagens a cada 5 segundos */}
+          <Carousel.Item>
+            <img className="d-block carousel-image" src={image1} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block carousel-image" src={image2} alt="Second slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block carousel-image" src={image3} alt="Third slide" />
+          </Carousel.Item>
+        </Carousel>
         <h1>Importância da Preservação Ambiental</h1>
         <p>
           A preservação do meio ambiente é essencial para garantir a qualidade de vida das futuras gerações. 
@@ -71,6 +83,10 @@ const MainContent = () => {
           <div className="form-group">
             <label htmlFor="email">E-mail:</label>
             <input type="email" id="email" name="email" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit" className="submit-button">Enviar</button>
         </form>
